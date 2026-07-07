@@ -14,7 +14,7 @@ st.set_page_config(
 # ── Load & clean data ───────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    csv_path = Path(__file__).parent.parent / "Customer_Shopping_Behavior_Analysis" / "customer_shopping_behavior.csv"
+    csv_path = Path(__file__).parent.parent / "customer_shopping_behavior.csv"
     df = pd.read_csv(csv_path)
 
     # Fill missing Review Rating with category-wise median (same as notebook)
